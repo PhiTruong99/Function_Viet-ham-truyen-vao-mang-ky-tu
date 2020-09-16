@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Viết hàm truyền vào mảng kí tự</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+            //kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+            //Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+
+            // b1 nhập vào mảng Array
+            // b2 nhập vào kí tự a
+            // b3 for duyệt mảng array nếu gặp a thì count tăng lên 1 , ko có a trả về -1
+            // b4 hiển thi 
+            var dempt=0;
+            function messeger(kt,arr){
+                for(var i=0;i<arr.length;i++){
+                    if(kt==arr[i]){
+                        dempt = dempt + 1;
+                    }
+                }
+                if(dempt>=1){
+                    document.write("Ký tự ",a," xuất hiện ",dempt);
+                }if(dempt==0){
+                    document.write("Ký tự đã nhập không nằm trong mảng")
+                }
+            }
+            var b = ["a","b","c","d","e","f","g","h","l","j","k","a","b","b","c","f","e","f","g"];
+            var a = prompt("Nhập ký tự bất kỳ");
+            messeger(a,b);  
+        </script>
+    </body>
+</html>
